@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+ <img src="../../assets/imgs/5.png" width="200px">
+ <ion-list>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="id"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="pass"></ion-input>
+  </ion-item>
+
+</ion-list>
+<button ion-button outline block (click)="next()">LOGIN</button>
+<ion-label class="color-red">Forget Password</ion-label>
+</ion-content>
+
+
