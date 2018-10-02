@@ -7,6 +7,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DetailPage } from '../pages/detail/detail';
+import { TextToSpeech } from '@ionic-native/text-to-speech';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { DetailPage } from '../pages/detail/detail';
     StatusBar,
     SplashScreen,
     Camera,
+    TextToSpeech,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

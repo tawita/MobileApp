@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { TextToSpeech } from '@ionic-native/text-to-speech';
+
 
 /**
  * Generated class for the DetailPage page.
@@ -16,8 +18,13 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 })
 export class DetailPage {
   a:any;
-
-  constructor(public camera:Camera, public navCtrl: NavController, public navParams: NavParams) {
+  text:any;
+  constructor(private tts: TextToSpeech,public camera:Camera, public navCtrl: NavController, public navParams: NavParams) {
+  }
+  textS(){
+    this.tts.speak('this.text')
+  .then(() => console.log('Success'))
+  .catch((reason: any) => console.log(reason));
   }
 
   ionViewDidLoad() {
