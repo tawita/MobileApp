@@ -9,7 +9,7 @@
   <ion-navbar>
     <ion-title>detail</ion-title>
     <ion-buttons right>
-      <button ion-button icon-only outline color="dark">
+      <button (click)="connCamera()" ion-button icon-only outline color="dark">
         <ion-icon name="md-camera" large></ion-icon>
       </button>
     </ion-buttons>
@@ -19,5 +19,5 @@
 
 
 <ion-content padding>
-
+  <ion-img [src]="a"></ion-img>
 </ion-content>
